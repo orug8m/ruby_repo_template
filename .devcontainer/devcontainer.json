@@ -1,0 +1,21 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.154.2/containers/docker-existing-dockerfile
+{
+	"name": "repo_temp_ruby",
+	"extensions": [
+		"rebornix.ruby",
+		"misogi.ruby-rubocop",
+		"esbenp.prettier-vscode"
+	],
+	"dockerComposeFile": ["../docker-compose.yml"],
+	"settings": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"[ruby]": {
+			"editor.tabSize": 2,
+			"editor.defaultFormatter": "misogi.ruby-rubocop"
+		}
+	},
+	"service": "batch",
+	"shutdownAction": "stopCompose",
+	"workspaceFolder": "/src"
+}
