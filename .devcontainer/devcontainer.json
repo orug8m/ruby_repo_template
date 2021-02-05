@@ -3,19 +3,21 @@
 {
 	"name": "repo_temp_ruby",
 	"extensions": [
-		"rebornix.ruby",
+		"esbenp.prettier-vscode",
 		"misogi.ruby-rubocop",
-		"esbenp.prettier-vscode"
+		"ms-azuretools.vscode-docker",
+		"rebornix.ruby"
 	],
 	"dockerComposeFile": ["../docker-compose.yml"],
 	"settings": {
+		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"[ruby]": {
 			"editor.tabSize": 2,
 			"editor.defaultFormatter": "misogi.ruby-rubocop"
 		}
 	},
-	"service": "batch",
+	"service": "ruby_batch",
 	"shutdownAction": "stopCompose",
 	"workspaceFolder": "/src"
 }

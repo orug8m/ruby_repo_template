@@ -1,6 +1,6 @@
 version: "3"
 services:
-  batch:
+  ruby_batch:
     build:
       context: .
       dockerfile: Dockerfile
